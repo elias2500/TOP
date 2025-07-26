@@ -1,3 +1,6 @@
 [submodule "git_test"]
 	path = git_test
 	url = git@github.com:elias2500/git_test.git
+[submodule "odin-recipes"]
+	path = odin-recipes
+	url = git@github.com:elias2500/odin-recipes.git
