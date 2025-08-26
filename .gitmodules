@@ -13,3 +13,6 @@
 [submodule "landing-page"]
 	path = landing-page
 	url = git@github.com:elias2500/landing-page.git
+[submodule "javascript-exercises"]
+	path = javascript-exercises
+	url = git@github.com:elias2500/javascript-exercises.git
