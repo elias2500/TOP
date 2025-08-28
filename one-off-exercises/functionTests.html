@@ -18,6 +18,18 @@
         }
 
         console.log(multiply(3,4));
+
+        function capitalize(string){
+            const firstLetter = string.charAt(0);
+            const restOfLetters = string.slice(1);
+
+            firstLetterCap = firstLetter.toUpperCase();
+            restOfLettersLow = restOfLetters.toLowerCase();
+
+            return firstLetterCap + restOfLettersLow;
+        }
+
+        console.log(capitalize("TesT"))
     </script>
 </body>
 </html>
