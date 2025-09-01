@@ -16,3 +16,6 @@
 [submodule "javascript-exercises"]
 	path = javascript-exercises
 	url = git@github.com:elias2500/javascript-exercises.git
+[submodule "rock-paper-scissors"]
+	path = rock-paper-scissors
+	url = git@github.com:elias2500/rock-paper-scissors.git
