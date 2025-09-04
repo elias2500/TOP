@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Range</title>
+</head>
+<body>
+    <script>
+        /* 
+        Exercise: 
+        Write a function filterRange(arr, a, b) that gets an array arr, 
+        looks for elements with values higher or equal to a and lower or equal to b and return a result as an array.
+        The function should not modify the array. It should return the new array.
+
+        https://javascript.info/array-methods#filter-range
+        */
+
+        function filterRange(arr, a, b){
+            return filteredArr = arr.filter(current => {return(current >= a && current <= b)})
+                                    .map(current => {return current});
+        }
+
+        let array = [5, 3, 8, 1]
+        console.log(filterRange(array, 1, 4));
+        console.log(array)
+
+        /* 
+        
+        This is also enough:
+        function filterRange(arr, a, b) {
+            // added brackets around the expression for better readability
+            return arr.filter(item => (a <= item && item <= b));
+        }
+
+        */
+    </script>
+</body>
+</html>
