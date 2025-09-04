@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transalate</title>
+</head>
+<body>
+    <script>
+        /* 
+        Exercise: 
+        Write the function camelize(str) that changes dash-separated words like “my-short-string” into camel-cased “myShortString”.
+
+        That is: removes all dashes, each word after dash becomes uppercased. 
+        https://javascript.info/array-methods#translate-border-left-width-to-borderleftwidth
+        */
+       function camelize(str){
+            let strArray = str.split('-');
+            let mappedStrArray = strArray.map((element,index) => {
+                if(index != 0){
+                    return capitalized = 
+                    element.charAt(0).toUpperCase()
+                    + element.slice(1);
+                }else{
+                    return element;
+                }
+            });
+            return(camelizedStr = mappedStrArray.join(''));
+       }
+
+       console.log(camelize('my-short-string'));
+    </script>
+</body>
+</html>
