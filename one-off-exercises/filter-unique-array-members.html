@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Exercise: Let arr be an array. Create a function unique(arr) that should return an array with unique items of arr.
+
+        https://javascript.info/array-methods#filter-unique-array-members
+        */
+
+        function unique(arr){
+            let uniqueArr = [];
+            for (let str of arr){
+                if(!uniqueArr.includes(str)){
+                    uniqueArr.push(str);
+                }
+            }
+                
+            return uniqueArr;
+        }
+        /*
+        Works but has potential performance issues. According to the exercise: "Further in the chapter Map and Set we’ll see how to optimize it."
+        */
+
+        let arr = ["Hare", "Krishna", "Hare", "Krishna", 
+        "Krishna", "Krishna", "Hare", "Hare", ":-O"];
+        
+        console.log(unique(arr));
+    </script>
+</body>
+</html>
