@@ -15,7 +15,7 @@
         */
 
         function shuffle(array){
-            const RANDOM_NUMBER = (Math.random()+1)*10
+            const RANDOM_NUMBER = (Math.random()-0.5)*10
             return (array.sort(a => a - RANDOM_NUMBER));
         }
 
