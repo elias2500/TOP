@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Exercise: We have an array of strings arr. We’d like to have a sorted copy of it, but keep arr unmodified.
+        Create a function copySorted(arr) that returns such a copy.
+
+        https://javascript.info/array-methods#copy-and-sort-array
+        */
+
+        function copySorted(arr){
+            let sortedArr = arr;
+            console.log(sortedArr);
+            return sortedArr.sort();
+        }
+
+        /*
+        This also works and is better and more concise:
+        
+        function copySorted(arr) {
+            return arr.slice().sort();
+        }
+            
+        */
+
+        let arr = ["HTML", "JavaScript", "CSS"];
+        let sorted = copySorted(arr);
+        console.log(sorted);
+    </script>
+</body>
+</html>
