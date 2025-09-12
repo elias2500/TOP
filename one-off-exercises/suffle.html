@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Exercise: Write the function shuffle(array) that shuffles (randomly reorders) elements of the array.
+        Multiple runs of shuffle may lead to different orders of elements.
+
+        https://javascript.info/array-methods#shuffle-an-array
+        */
+
+        function shuffle(array){
+            const RANDOM_NUMBER = (Math.random()+1)*10
+            return (array.sort(a => a - RANDOM_NUMBER));
+        }
+
+        let array = [1, 2, 3]
+        console.log(shuffle(array));
+        console.log(shuffle(array));
+        console.log(shuffle(array));
+        console.log(shuffle(array));
+    </script>
+</body>
+</html>
